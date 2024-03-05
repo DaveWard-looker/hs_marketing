@@ -73,13 +73,21 @@ view: users {
   }
 
   dimension: latitude {
+    hidden: yes
     type: number
     sql: ${TABLE}.latitude ;;
   }
 
   dimension: longitude {
+    hidden: yes
     type: number
     sql: ${TABLE}.longitude ;;
+  }
+
+  dimension: user_location {
+    type: location
+    sql_latitude: ${latitude} ;;
+    sql_longitude: ${longitude} ;;
   }
 
   dimension: state {
