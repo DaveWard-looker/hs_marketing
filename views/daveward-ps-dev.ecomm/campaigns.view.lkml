@@ -1,5 +1,6 @@
 # The name of this view in Looker is "Campaigns"
 view: campaigns {
+  # test
   # The sql_table_name parameter indicates the underlying database table
   # to be used for all fields in this view.
   sql_table_name: `daveward-ps-dev.ecomm.campaigns` ;;
